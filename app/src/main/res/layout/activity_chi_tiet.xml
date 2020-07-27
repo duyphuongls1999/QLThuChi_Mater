@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChiTietActivity">
+
+    <RelativeLayout
+        android:id="@+id/rellay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C6022A"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="XEM THÔNG TIN CHI TIẾT"
+            android:textAlignment="center"
+            android:textColor="#F6F1F1"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LLchitiet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rellay"
+        android:background="#FCFCFD"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/EditTien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/tien"
+                android:drawablePadding="10sp"
+                android:layout_marginLeft="20sp"
+                android:hint="TIỀN:"
+                android:layout_marginTop="35sp"
+                tools:ignore="InvalidId" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/EditLoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/loai"
+                android:hint="LOẠI:"
+                android:layout_marginTop="35sp"
+                android:layout_marginLeft="20sp"
+                android:drawablePadding="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/EditGhichu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ghichu"
+                android:hint="GHI CHÚ:"
+                android:layout_marginTop="35sp"
+                android:layout_marginLeft="20sp"
+                android:drawablePadding="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/EditThoigian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/thoigian"
+                android:hint="THỜI GIAN:"
+                android:layout_marginTop="35sp"
+                android:layout_marginLeft="20sp"
+                android:drawablePadding="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+            <RelativeLayout
+                android:id="@+id/rellaychitiet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnSua"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:background="#008000"
+                    android:text="SỬA"
+                    android:textColor="#F6F1F1"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btnDong"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="18dp"
+                    android:background="#008000"
+                    android:text="ĐÓNG"
+                    android:textColor="#F6F1F1"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

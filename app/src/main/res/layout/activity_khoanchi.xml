@@ -1,0 +1,71 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Khoản Chi"
+    android:background="@color/red"
+    android:textSize="50dp"
+    android:gravity="center"
+    android:textColor="@color/text"
+    ></TextView>
+    <EditText
+        android:layout_marginTop="25dp"
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Loại thu chi"></EditText>
+
+    <EditText
+        android:id="@+id/edittextghichu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:hint="Ghi chú"></EditText>
+    <EditText
+        android:id="@+id/edittextngaytao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày tạo"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center">
+    </EditText>
+    <EditText
+        android:id="@+id/edittextsotien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số tiền"
+        android:layout_marginTop="25dp"
+        android:inputType="number"
+        android:layout_gravity="center">
+    </EditText>
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:textSize="25dp"
+            android:textColor="@color/text"
+            android:background="@color/button"
+            android:id="@+id/btnThem"/>
+
+        <Button
+            android:layout_marginLeft="80dp"
+            android:id="@+id/btnHuy"
+            android:background="@color/button"
+            android:layout_width="150dp"
+            android:textColor="@color/text"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"
+            android:text="Hủy"/>
+
+    </LinearLayout>
+</LinearLayout>

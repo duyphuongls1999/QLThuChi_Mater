@@ -1,0 +1,24 @@
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nhập loại thu chi"
+        android:id="@+id/txtLoaithuChi">
+    </EditText>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0:Loại chi  1:Loại thu"
+        android:id="@+id/txtLoai"
+        android:inputType="number">
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOK"
+        android:text="Ok">
+    </Button>
+
+</LinearLayout>
